@@ -1,0 +1,153 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Cores baseadas na imagem -->
+    <!-- MODERN GOLD - PANTONE 7408 C #F2BC18 -->
+    <SolidColorBrush x:Key="ModernGold" Color="#F2BC18"/>
+    
+    <!-- DEEP GREY - PANTONE BLACK 7 C #393839 -->
+    <SolidColorBrush x:Key="DeepGrey" Color="#393839"/>
+    
+    <!-- OFF WHITE #F1F1F1 -->
+    <SolidColorBrush x:Key="OffWhite" Color="#F1F1F1"/>
+    
+    <!-- MODERN BLUE - PANTONE 2172 C #0077D9 -->
+    <SolidColorBrush x:Key="ModernBlue" Color="#0077D9"/>
+    
+    <!-- RAPID BLUE - PANTONE 299 C #0099FF -->
+    <SolidColorBrush x:Key="RapidBlue" Color="#0099FF"/>
+    
+    <!-- ACCELERATE YELLOW - PANTONE YELLOW C #F2E14C -->
+    <SolidColorBrush x:Key="AccelerateYellow" Color="#F2E14C"/>
+    
+    <!-- RED HOT - PANTONE 185 C #EA212B -->
+    <SolidColorBrush x:Key="RedHot" Color="#EA212B"/>
+    
+    <!-- SAND DUNE - PANTONE 7527 C #F2BC18 (mesmo do Modern Gold) -->
+    <SolidColorBrush x:Key="SandDune" Color="#F2BC18"/>
+
+    <!-- Mapeamento para os brushes existentes -->
+    <SolidColorBrush x:Key="BgBrush"           Color="#F1F1F1"/>      <!-- OffWhite -->
+    <SolidColorBrush x:Key="PrimaryBrush"      Color="#393839"/>      <!-- DeepGrey -->
+    <SolidColorBrush x:Key="PrimaryFgBrush"    Color="#F1F1F1"/>      <!-- OffWhite -->
+    <SolidColorBrush x:Key="SecondaryBrush"    Color="#F2BC18"/>      <!-- ModernGold -->
+    <SolidColorBrush x:Key="MutedFgBrush"      Color="#393839"/>      <!-- DeepGrey -->
+    <SolidColorBrush x:Key="AccentBrush"       Color="#0099FF"/>      <!-- RapidBlue -->
+    <SolidColorBrush x:Key="BorderBrush"       Color="#393839"/>      <!-- DeepGrey -->
+    <SolidColorBrush x:Key="DangerBrush"       Color="#EA212B"/>      <!-- RedHot -->
+    <SolidColorBrush x:Key="SuccessBrush"      Color="#0077D9"/>      <!-- ModernBlue -->
+
+    <!-- Botão primário grande (totem) -->
+    <Style x:Key="BotaoPrimario" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource PrimaryFgBrush}"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Height" Value="80"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="16">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Opacity" Value="0.92"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Bd" Property="Opacity" Value="0.4"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Botão secundário -->
+    <Style x:Key="BotaoSecundario" TargetType="Button" BasedOn="{StaticResource BotaoPrimario}">
+        <Setter Property="Background" Value="{StaticResource SecondaryBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}"
+                            BorderBrush="{StaticResource BorderBrush}" BorderThickness="2"
+                            CornerRadius="16">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="#E6D410"/> <!-- Gold mais escuro para hover -->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Botão terciário - versão azul rápida -->
+    <Style x:Key="BotaoRapido" TargetType="Button" BasedOn="{StaticResource BotaoPrimario}">
+        <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource OffWhite}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="16">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="#0088E6"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Botão de perigo -->
+    <Style x:Key="BotaoPerigo" TargetType="Button" BasedOn="{StaticResource BotaoPrimario}">
+        <Setter Property="Background" Value="{StaticResource DangerBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource OffWhite}"/>
+    </Style>
+
+    <!-- TextBox grande -->
+    <Style x:Key="InputGrande" TargetType="TextBox">
+        <Setter Property="FontSize" Value="32"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Height" Value="80"/>
+        <Setter Property="Padding" Value="16,0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="{StaticResource OffWhite}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Foreground" Value="{StaticResource DeepGrey}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border CornerRadius="16" Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <ScrollViewer x:Name="PART_ContentHost" Margin="{TemplateBinding Padding}"
+                                      VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Título -->
+    <Style x:Key="Titulo" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="36"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="{StaticResource DeepGrey}"/>
+    </Style>
+
+    <Style x:Key="Subtitulo" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="{StaticResource DeepGrey}"/>
+        <Setter Property="Opacity" Value="0.7"/>
+    </Style>
+</ResourceDictionary>
