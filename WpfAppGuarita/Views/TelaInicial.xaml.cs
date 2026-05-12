@@ -17,10 +17,10 @@ namespace WpfAppGuarita.Views
             MainWindow.Instance.Navegar(new TelaCapturaPlaca());
         }
 
-        private void OnRegistros(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine(sender.ToString(), e);
-            MainWindow.Instance.Navegar(new TelaTabelaEntrada());
-        }
+        //private void OnRegistros(object sender, RoutedEventArgs e)
+        //{
+        //    Console.WriteLine(sender.ToString(), e);
+        //    MainWindow.Instance.Navegar(new TelaTabelaEntrada());
+        //}
     }
 }

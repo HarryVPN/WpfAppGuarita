@@ -3,31 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\views\\telacapturaplaca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telacapturaplaca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\views\\telacapturaplaca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telacapturaplaca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telatabelaentrada.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telatabelaentrada.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telacapturaplaca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telacapturaplaca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telatabelaentrada.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\views\\telatabelaentrada.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telatabelaentrada.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telacapturaplaca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telacapturaplaca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\styles\\cores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\styles\\cores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telainicial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\views\\telainicial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telainicial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|c:\\users\\rafael.rodrigues\\documents\\projetoricardoplacas\\wpfappguarita\\wpfappguarita\\views\\telainicial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\wpfappguarita\\views\\telainicial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{285B3DEB-A12A-4DCA-9FF5-E84C5A0791E7}|WpfAppGuarita\\WpfAppGuarita.csproj|solutionrelative:wpfappguarita\\views\\telainicial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,17 +42,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Cores.xaml",
+              "DocumentMoniker": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Styles\\Cores.xaml",
+              "RelativeDocumentMoniker": "WpfAppGuarita\\Styles\\Cores.xaml",
+              "ToolTip": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Styles\\Cores.xaml",
+              "RelativeToolTip": "WpfAppGuarita\\Styles\\Cores.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-12T12:52:04.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Utils.cs",
               "DocumentMoniker": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Utils.cs",
               "RelativeDocumentMoniker": "WpfAppGuarita\\Utils.cs",
               "ToolTip": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Utils.cs",
               "RelativeToolTip": "WpfAppGuarita\\Utils.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEkAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T13:26:12.092Z",
               "EditorCaption": ""
@@ -67,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TelaTabelaEntrada.xaml.cs",
               "DocumentMoniker": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaTabelaEntrada.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppGuarita\\Views\\TelaTabelaEntrada.xaml.cs",
               "ToolTip": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaTabelaEntrada.xaml.cs",
               "RelativeToolTip": "WpfAppGuarita\\Views\\TelaTabelaEntrada.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAmwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T12:28:42.655Z",
               "EditorCaption": ""
@@ -92,13 +108,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "TelaCapturaPlaca.xaml.cs",
               "DocumentMoniker": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaCapturaPlaca.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppGuarita\\Views\\TelaCapturaPlaca.xaml.cs",
               "ToolTip": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaCapturaPlaca.xaml.cs",
               "RelativeToolTip": "WpfAppGuarita\\Views\\TelaCapturaPlaca.xaml.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAcwHYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwD0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T12:26:25.738Z",
               "EditorCaption": ""
@@ -117,13 +133,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TelaInicial.xaml.cs",
               "DocumentMoniker": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaInicial.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppGuarita\\Views\\TelaInicial.xaml.cs",
               "ToolTip": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\Views\\TelaInicial.xaml.cs",
               "RelativeToolTip": "WpfAppGuarita\\Views\\TelaInicial.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T12:26:30.861Z",
               "EditorCaption": ""

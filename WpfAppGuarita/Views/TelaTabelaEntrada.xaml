@@ -150,14 +150,18 @@
                             HorizontalAlignment="Right"
                             Margin="0,20,0,0">
 
-                    <Button Content="Atualizar" Click="OnAtualizar"
+                    <!--Atualizar-->
+                    <Button Content="Atualizar" Click="OnAtualizar" Style="{StaticResource BotaoPrimario}"
+                        x:Name="Atualizar"
                         Width="140" Height="42"
                         Background="#111827" Foreground="White"
                         FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"
-                        Margin="0,0,10,0">
+                        Margin="0,0,10,0" Loaded="Window_Loaded">
+
                     </Button>
 
-                    <Button Content="Voltar"
+                    <!--Voltar-->
+                    <Button Content="Voltar" Style="{StaticResource BotaoPrimario}"
                             Width="140"
                             Height="42"
                             Click="OnVoltar"
@@ -166,28 +170,6 @@
                             FontWeight="SemiBold"
                             BorderThickness="0"
                             Cursor="Hand">
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border Background="{TemplateBinding Background}"
-                                                    CornerRadius="8">
-                                                <ContentPresenter HorizontalAlignment="Center"
-                                                                  VerticalAlignment="Center"/>
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#1F2937"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-
                     </Button>
                 </StackPanel>
 

@@ -22,23 +22,9 @@
                        HorizontalAlignment="Center" Margin="0,8,0,32"/>
 
             <Button Content="INICIAR" Width="320" Style="{StaticResource BotaoPrimario}"
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Center"
                     FontSize="26" Click="OnIniciar" Background="#FFF2BC18" FontWeight="EXTRABOLD" Foreground="#FFFFFFFF"/>
             
-            <Button Content="REGISTROS" Click="OnRegistros"
-        HorizontalAlignment="Right" Width="130" Height="50" 
-        VerticalAlignment="Center" Margin="0,0,0,0"
-        FontSize="13" FontWeight="Bold" Cursor="Hand"
-        Background="#333" Foreground="White" BorderThickness="0">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-
         </StackPanel>
     </Grid>
 </Page>

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Data.SqlClient;
-using System.Runtime.Remoting.Messaging;
+//using System.Data.SqlClient;
+//using System.Runtime.Remoting.Messaging;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Animation;
 
-using WpfAppGuarita;
-using WpfAppGuarita.Views;
-
+//using WpfAppGuarita;
+//using WpfAppGuarita.Views;
 
 namespace WpfAppGuarita.Views
 {
@@ -20,34 +20,6 @@ namespace WpfAppGuarita.Views
         public byte Status { get; set; }
         public string ValorFormatado { get; set; }
     }
-
-    //public class OrdensViewModel
-    //{
-    //    public ObservableCollection<Ordem> Ordens { get; } = new ObservableCollection<Ordem>();
-
-    //    public OrdensViewModel()
-    //    {
-    //        //Ordens.Add(new Ordem
-    //        //{
-    //        //    Numero = "ABC-1234",
-    //        //    Descricao = "Toyota Corolla",
-    //        //    DataServicoFmt = "10/05/2026",
-    //        //    DataVencimentoFmt = "20/05/2026",
-    //        //    Status = "Aberto",
-    //        //    ValorFormatado = "R$ 350,00"
-    //        //});
-
-    //        //Ordens.Add(new Ordem
-    //        //{
-    //        //    Numero = "XYZ-9876",
-    //        //    Descricao = "Honda Civic",
-    //        //    DataServicoFmt = "11/05/2026",
-    //        //    DataVencimentoFmt = "25/05/2026",
-    //        //    Status = "Pago",
-    //        //    ValorFormatado = "R$ 420,00"
-    //        //});
-    //    }
-    //}
 
     public partial class TelaTabelaEntrada : Page
     {
@@ -62,7 +34,7 @@ namespace WpfAppGuarita.Views
 
             //var model = new OrdensViewModel();
             //Ordens = model.Ordens;
-            DataContext = Ordens;
+            DataContext = this;
 
             // Rafael, comente esse código de baixo caso o C# não econtre o Sql Server no seu Perfil -Vitor
             Sql = new Banco();
@@ -77,6 +49,29 @@ namespace WpfAppGuarita.Views
                     Status = item.Esconder,
                     ValorFormatado = "R$ 180,00"
                 });
+        }
+
+        // Trigger animation when the window is loaded
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Create a fade-in animation
+                DoubleAnimation fadeIn = new DoubleAnimation
+                {
+                    From = 0,          // Start fully transparent
+                    To = 1,            // End fully visible
+                    Duration = TimeSpan.FromSeconds(1.5),
+                    EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseOut }
+                };
+
+                // Start the animation on the TextBlock's Opacity property
+                Atualizar.BeginAnimation(UIElement.OpacityProperty, fadeIn);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Animation error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void OnAtualizar(object sender, RoutedEventArgs e)

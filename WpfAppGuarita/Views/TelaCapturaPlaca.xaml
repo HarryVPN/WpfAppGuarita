@@ -59,48 +59,41 @@
             <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom">
 
                 <!-- Botão Limpar -->
-                <Button Content="LIMPAR" Click="BotaoLimpar_Click"
-                        Width="110" Height="50" Margin="0,0,10,0"
+                <Button Content="LIMPAR" Click="OnLimpar" Style="{StaticResource BotaoPrimario}"
+                        x:Name="BtnLimpar" 
+                        Width="220" Height="65" Margin="0,0,10,0"
                         FontSize="13" FontWeight="Bold" Cursor="Hand"
                         Background="#E0E0E0" Foreground="#444" BorderThickness="0">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
+                    <Button.Triggers>
+                        <!-- Trigger animation when button is clicked -->
+                        <EventTrigger RoutedEvent="Button.Click">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <!-- Animate background color -->
+                                    <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                        To="Orange" Duration="0:0:0.5" AutoReverse="True" />
+
+                                    <!-- Animate position (Margin.Left) -->
+                                    <ThicknessAnimation Storyboard.TargetProperty="Margin"
+                            To="150,125,0,0" Duration="0:0:0.5" AutoReverse="True" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
                 </Button>
 
                 <!-- Botão Registros -->
-                <Button Content="REGISTROS" Click="BtnRegistros"
-                        Width="130" Height="50" Margin="0,0,10,0"
+                <Button Content="REGISTROS" Click="BtnRegistros" Style="{StaticResource BotaoPrimario}"
+                        Width="220" Height="65" Margin="0,0,10,0"
                         FontSize="13" FontWeight="Bold" Cursor="Hand"
                         Background="#333" Foreground="White" BorderThickness="0">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
                 </Button>
 
                 <!-- Botão Confirmar (Principal) -->
-                <Button Content="CONFIRMAR ACESSO" Click="BtnSalvarFoto"
+                <Button Content="CONFIRMAR ACESSO" Click="BtnSalvarFoto" Style="{StaticResource BotaoPrimario}"
                         Width="220" Height="65"
                         FontSize="16" FontWeight="Black" Cursor="Hand"
                         Background="#FFF2BC18" Foreground="White" BorderThickness="0">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="12">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                    <Button.Effect>
-                        <DropShadowEffect BlurRadius="12" ShadowDepth="3" Opacity="0.4" Color="#FFF2BC18"/>
-                    </Button.Effect>
                 </Button>
 
             </StackPanel>

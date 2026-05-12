@@ -1,6 +1,7 @@
 ﻿using MjpegProcessor;
 using Newtonsoft.Json;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Net.Http;
 using System.Windows;
@@ -15,10 +16,13 @@ namespace WpfAppGuarita.Views
         private MjpegDecoder _mjpegDecoder;
         private DispatcherTimer _timerPlaca;
         private readonly HttpClient _httpClient = new HttpClient();
+        private System.Windows.Media.Brush CorLimpar { get; set; }
 
         public TelaCapturaPlaca()
         {
             InitializeComponent();
+
+            CorLimpar = BtnLimpar.Background;
 
             // 1. Inicializa o Decoder de Vídeo (MjpegProcessor)
             _mjpegDecoder = new MjpegDecoder();
@@ -89,20 +93,23 @@ namespace WpfAppGuarita.Views
                     {
                         txtPlacaDetectada.Text = "AGUARDANDO...";
                         txtPlacaDetectada.Foreground = System.Windows.Media.Brushes.Gray;
+                        BtnLimpar.Background = CorLimpar;
                     }
                     else
                     {
                         txtPlacaDetectada.Text = placa;
                         txtPlacaDetectada.Foreground = System.Windows.Media.Brushes.Green;
-                        //MessageBox.Show(placa);
+                        BtnLimpar.Background = System.Windows.Media.Brushes.Green;
                     }
                 });
             }
             catch { }
         }
 
+
+        
         // Botão para limpar a placa atual e permitir nova leitura
-        private async void BotaoLimpar_Click(object sender, RoutedEventArgs e)
+        private async void OnLimpar(object sender, RoutedEventArgs e)
         {
             try
             {
