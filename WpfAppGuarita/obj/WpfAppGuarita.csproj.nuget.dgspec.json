@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\WpfAppGuarita.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\WpfAppGuarita.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\WpfAppGuarita.csproj",
+        "projectName": "WpfAppGuarita",
+        "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\WpfAppGuarita.csproj",
+        "packagesPath": "C:\\Users\\Vitor.Martins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafael.rodrigues\\Documents\\ProjetoRicardoPlacas\\WpfAppGuarita\\WpfAppGuarita\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vitor.Martins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "MjpegProcessor": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[10.1.6, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

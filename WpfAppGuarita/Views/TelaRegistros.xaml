@@ -1,0 +1,141 @@
+﻿<Page x:Class="WpfAppGuarita.Views.TelaRegistros"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#F5F6FA">
+
+    <Page.Resources>
+
+        <!-- Cores modernas -->
+        <SolidColorBrush x:Key="Primary" Color="#2563EB"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#111827"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#6B7280"/>
+        <SolidColorBrush x:Key="BorderColor" Color="#E5E7EB"/>
+
+        <!-- Header -->
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource TextSecondary}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        </Style>
+
+        <!-- Cell -->
+        <Style TargetType="DataGridCell">
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+
+        <!-- Remove seleção azul -->
+        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="#111827"/>
+
+    </Page.Resources>
+
+    <Grid Margin="30">
+
+        <!-- CARD PRINCIPAL -->
+        <Border Background="White"
+                CornerRadius="12"
+                Padding="24"
+                BorderBrush="#E5E7EB"
+                BorderThickness="1">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.08"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- HEADER -->
+                <StackPanel Margin="0,0,0,20">
+                    
+                    <TextBlock Text="Registro de Placas"
+                               FontSize="22"
+                               FontWeight="SemiBold"
+                               Foreground="{StaticResource TextPrimary}"/>
+
+                    <TextBlock x:Name="Esperando"
+                        Text="Esperando o Carlos ligar a API dele zzz"
+                        FontSize="25" Foreground="#393839"/>
+
+                </StackPanel>
+
+                <!-- TABELA -->
+                <DataGrid x:Name="GridOrdenes"
+                  Grid.Row="1"
+                  ItemsSource="{Binding Ordens}"
+                  AutoGenerateColumns="False"
+                  RowHeight="55"
+                  HeadersVisibility="Column"
+                  BorderThickness="0"
+                  GridLinesVisibility="None"
+                  Background="Transparent"
+                  CanUserAddRows="False"
+                  IsReadOnly="True">
+
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="#F1F5F9"/>
+                            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#F9FAFB"/>
+                                </Trigger>
+
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#EEF2FF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.RowStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Placa" Binding="{Binding placa}" Width="65"/>
+
+                        <DataGridTextColumn Header="Data Agendamento" Binding="{Binding dataAgendamento}" Width="140"/>
+
+                        <DataGridTextColumn Header="Ciente" Binding="{Binding cliente}" Width="300"/>
+
+                        <DataGridTextColumn Header="Tecnico" Binding="{Binding tecnico}" Width="290"/>
+
+                        <DataGridTextColumn Header="Agendado Por" Binding="{Binding agendadoPor}" Width="300"/>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <!-- FOOTER -->
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,20,0,0">
+
+                    <!--Voltar-->
+                    <Button Content="Voltar" Style="{StaticResource BotaoPrimario}"
+                            Width="140"
+                            Height="42"
+                            Click="OnVoltar"
+                            Background="#111827"
+                            Foreground="White"
+                            FontWeight="SemiBold"
+                            BorderThickness="0"
+                            Cursor="Hand">
+                    </Button>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

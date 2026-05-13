@@ -82,12 +82,16 @@
                     </Button.Triggers>
                 </Button>
 
-                <!-- Botão Registros -->
-                <Button Content="REGISTROS" Click="BtnRegistros" Style="{StaticResource BotaoPrimario}"
-                        Width="220" Height="65" Margin="0,0,10,0"
-                        FontSize="13" FontWeight="Bold" Cursor="Hand"
-                        Background="#333" Foreground="White" BorderThickness="0">
-                </Button>
+                <!-- Botão Tabela Registros -->
+                <!-- Botão Tabela Registros -->
+                <Button Content="REGISTROS" 
+                        Click="BtnAbrirRegistros" 
+                        Style="{StaticResource BotaoPrimario}"
+                        Width="192" Height="65"
+                        Margin="0,0,10,0" 
+                        FontSize="16" FontWeight="Black" Cursor="Hand"
+                        Background="#333333" Foreground="White" BorderThickness="0" 
+                        RenderTransformOrigin="0.5,0.5"/>
 
                 <!-- Botão Confirmar (Principal) -->
                 <Button Content="CONFIRMAR ACESSO" Click="BtnSalvarFoto" Style="{StaticResource BotaoPrimario}"

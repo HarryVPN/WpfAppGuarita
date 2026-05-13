@@ -1,7 +1,6 @@
 ﻿using MjpegProcessor;
 using Newtonsoft.Json;
 using System;
-using System.Drawing;
 using System.IO;
 using System.Net.Http;
 using System.Windows;
@@ -87,7 +86,8 @@ namespace WpfAppGuarita.Views
                 var resultado = JsonConvert.DeserializeObject<dynamic>(response);
                 string placa = resultado.placa;
 
-                Dispatcher.Invoke(() => {
+                Dispatcher.Invoke(() =>
+                {
                     // Se o Python resetou, o C# também deve mostrar que está procurando
                     if (placa == "Procurando...")
                     {
@@ -107,7 +107,7 @@ namespace WpfAppGuarita.Views
         }
 
 
-        
+
         // Botão para limpar a placa atual e permitir nova leitura
         private async void OnLimpar(object sender, RoutedEventArgs e)
         {
@@ -124,6 +124,11 @@ namespace WpfAppGuarita.Views
             {
                 MessageBox.Show("Erro ao resetar servidor: " + ex.Message);
             }
+        }
+
+        private void BtnAbrirRegistros(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new TelaRegistros());
         }
 
         private async void BtnSalvarFoto(object sender, RoutedEventArgs e)
@@ -150,10 +155,6 @@ namespace WpfAppGuarita.Views
             _timerPlaca?.Stop();
         }
 
-        private void BtnRegistros(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine(sender.ToString(), e);
-            MainWindow.Instance.Navegar(new TelaTabelaEntrada());
-        }
+
     }
 }
