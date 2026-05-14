@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
-//using System.Data.SqlClient;
-//using System.Runtime.Remoting.Messaging;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
 using WpfAppGuarita;
+using WpfAppGuarita.Models;
 //using WpfAppGuarita.Views;
 
 namespace WpfAppGuarita.Views
@@ -17,12 +16,11 @@ namespace WpfAppGuarita.Views
     public partial class TelaRegistros : Page
     {
         public ObservableCollection<RegistroModel> Ordens { get; } = new ObservableCollection<RegistroModel>();
-        //public Banco Sql { get; set; }
         public HttpCarlosAPI Api { get; } = new HttpCarlosAPI();
 
         public async Task ReultadoDaApiGeraLista()
         {
-            List<RegistroModel> carros = await Api.ListagemCarros();
+            List<RegistroModel>? carros = await Api.ListagemCarros();
 
             foreach (var registro in carros!)
             {
@@ -45,7 +43,7 @@ namespace WpfAppGuarita.Views
 
             HttpCarlosAPI utils = new HttpCarlosAPI();
 
-            ReultadoDaApiGeraLista();
+            _ = ReultadoDaApiGeraLista();
         }
 
         // Trigger animation when the window is loaded
@@ -76,7 +74,6 @@ namespace WpfAppGuarita.Views
 
         private void OnVoltar(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(sender.ToString(), e);
             MainWindow.Instance.Navegar(new TelaCapturaPlaca());
         }
     }

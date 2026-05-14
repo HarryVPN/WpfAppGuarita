@@ -82,10 +82,8 @@ namespace WpfAppGuarita.Views
         {
             try
             {
-                var response = await _httpClient.GetStringAsync("http://localhost:5000/get_placa");
-                var resultado = JsonConvert.DeserializeObject<dynamic>(response);
-                string placa = resultado.placa;
-
+                string placa = await _httpClient.GetStringAsync("http://localhost:5000/get_placa");
+                
                 Dispatcher.Invoke(() =>
                 {
                     // Se o Python resetou, o C# também deve mostrar que está procurando
@@ -131,8 +129,13 @@ namespace WpfAppGuarita.Views
             this.NavigationService.Navigate(new TelaRegistros());
         }
 
+        public HttpCarlosAPI Api { get; } = new HttpCarlosAPI();
+
         private async void BtnSalvarFoto(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine(txtPlacaDetectada.Text);
+            Api.testepost(txtPlacaDetectada.Text);
+
             try
             {
                 // 1. Avisa o Python para salvar a ultima placa que passa os requerimentos
@@ -154,7 +157,5 @@ namespace WpfAppGuarita.Views
             _mjpegDecoder?.StopStream();
             _timerPlaca?.Stop();
         }
-
-
     }
 }
